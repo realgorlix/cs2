@@ -35,6 +35,7 @@ namespace cs2
             AimAssist.LoadValue();
             AimAssist.Start();
             Bhop.Start();
+            Autostrafer.Start();
             WorldEsp.Start();
             new Thread(() =>
             {
@@ -52,7 +53,7 @@ namespace cs2
 
         static void Initialize()
         {
-            Console.Title = Convert.ToBase64String(Encoding.UTF8.GetBytes(Guid.NewGuid().ToString())).Replace("0", "").Replace("L", "");
+            //Console.Title = Convert.ToBase64String(Encoding.UTF8.GetBytes(Guid.NewGuid().ToString())).Replace("0", "").Replace("L", "");
             string currentPath = Directory.GetCurrentDirectory();
             string soundsPath = Path.Combine(currentPath, "sounds");
             string offsetsPath = Path.Combine(currentPath, "generated");

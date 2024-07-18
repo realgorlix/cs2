@@ -140,12 +140,13 @@ namespace cs2.Config
         public bool DM_Mode_Enabled { get; set; }
         public bool HitMarker { get; set; }
         public bool Bhop { get; set; }
+        public bool AutoStrafer {get; set;}
 
         #region perf
 
         public int FPS_Max = 40;
         public int THR_DELAY_AIM = 10;
-        public int THR_DELAY_BHOP = 25;
+        public int THR_DELAY_BHOP = 1;
         public int THR_DELAY_TB = 25;
 
         #endregion

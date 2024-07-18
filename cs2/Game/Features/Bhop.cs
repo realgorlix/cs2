@@ -1,13 +1,6 @@
 ﻿using cs2.Config;
 using cs2.Game.Objects;
 using cs2.Offsets;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace cs2.Game.Features
 {
@@ -37,15 +30,9 @@ namespace cs2.Game.Features
         {
             _localPlayer.AddressBase = _localPlayer.ReadAddressBase();
             int flags = Memory.Read<int>(_localPlayer.AddressBase + OffsetsLoader.C_BaseEntity.m_fFlags);
-
             if (_key.state == Input.KeyState.DOWN)
-            {
                 if (flags == 65665 || flags == 65667)
-                {
                     Input.MouseMiddle();
-                    Thread.Sleep(10);
-                }
-            }
         }
 
         private static Input.Key _key = null!;

@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
+  <PropertyGroup> 
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>asdasdsad</AssemblyName>
+    <AssemblyName>RAdminVPN</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
     <Platforms>AnyCPU;x64</Platforms>
     <Product></Product>
     <Company>Losev Artyom</Company>
@@ -25,6 +26,7 @@
 
   <ItemGroup>
     <PackageReference Include="GameOverlay.Net" Version="4.3.1" />
+    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.21.256" />
     <PackageReference Include="SharpDX.XAudio2" Version="4.2.0" />
   </ItemGroup>
 

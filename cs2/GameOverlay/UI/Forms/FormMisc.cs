@@ -33,6 +33,7 @@ namespace cs2.GameOverlay.UI.Forms
             Add(_switcherSpectators = new UISwitcher("Spectators", new((x) => Configuration.Current.EnableSpectators = x)));
             Add(_hitMarker = new UISwitcher("Hit Marker", new((x) => Configuration.Current.HitMarker = x)));
             Add(_bhop = new UISwitcher("Bhop", new((x) => Configuration.Current.Bhop = x)));
+            Add(_autoStrafer = new UISwitcher("Auto Strafer", new((x) => Configuration.Current.AutoStrafer = x)));
             Add(_switcherBombTimer = new UISwitcher("Scoreboard", new((x) => Configuration.Current.Misc_Scoreboard = x)));
             Add(_switcherScoreboard = new UISwitcher("Bomb timer", new((x) => Configuration.Current.Misc_BombTimer = x)));
             Add(new UILine(this));
@@ -48,6 +49,7 @@ namespace cs2.GameOverlay.UI.Forms
             _switcherDM.Checked = Configuration.Current.DM_Mode_Enabled;
             _hitMarker.Checked = Configuration.Current.HitMarker;
             _bhop.Checked = Configuration.Current.Bhop;
+            _autoStrafer.Checked = Configuration.Current.AutoStrafer;
             _switcherScoreboard.Checked = Configuration.Current.Misc_Scoreboard;
             _switcherBombTimer.Checked = Configuration.Current.Misc_BombTimer;
 
@@ -60,6 +62,7 @@ namespace cs2.GameOverlay.UI.Forms
         private UISwitcher _switcherDM;
         private UISwitcher _hitMarker;
         private UISwitcher _bhop;
+        private UISwitcher _autoStrafer;
         private UISwitcher _switcherScoreboard;
         private UISwitcher _switcherBombTimer;
 
